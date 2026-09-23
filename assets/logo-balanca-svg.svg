@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#5c1c24">
+    <!-- Pilar Central -->
+    <rect x="30" y="14" width="4" height="38" />
+    
+    <!-- Base do Pilar (Degraus) -->
+    <path d="M 26 52 L 38 52 L 40 56 L 24 56 Z" />
+    <rect x="20" y="56" width="24" height="4" rx="1" />
+    <rect x="26" y="16" width="12" height="2" />
+    
+    <!-- Topo do Pilar (Pivô) -->
+    <circle cx="32" cy="10" r="3.5" />
+    
+    <!-- Haste Horizontal Curvada -->
+    <path d="M 8 18 Q 32 13 56 18" fill="none" stroke="#5c1c24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Fios de Suspensão - Prato Esquerdo -->
+    <line x1="8" y1="18" x2="2" y2="38" stroke="#5c1c24" stroke-width="1.2"/>
+    <line x1="8" y1="18" x2="8" y2="38" stroke="#5c1c24" stroke-width="1.2"/>
+    <line x1="8" y1="18" x2="14" y2="38" stroke="#5c1c24" stroke-width="1.2"/>
+    
+    <!-- Prato Esquerdo -->
+    <path d="M 1 38 Q 8 47 15 38 Z" />
+    
+    <!-- Fios de Suspensão - Prato Direito -->
+    <line x1="56" y1="18" x2="50" y2="38" stroke="#5c1c24" stroke-width="1.2"/>
+    <line x1="56" y1="18" x2="56" y2="38" stroke="#5c1c24" stroke-width="1.2"/>
+    <line x1="56" y1="18" x2="62" y2="38" stroke="#5c1c24" stroke-width="1.2"/>
+    
+    <!-- Prato Direito -->
+    <path d="M 49 38 Q 56 47 63 38 Z" />
+</svg>
