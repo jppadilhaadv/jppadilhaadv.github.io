@@ -54,7 +54,7 @@
     <!-- CABEÇALHO -->
     <header class="header">
         <div class="container header-content">
-            <!-- Logotipo e Nome (Atualizado com o caminho correto) -->
+            <!-- Logotipo e Nome -->
             <div class="brand" style="display: flex; align-items: center; gap: 12px;">
                 <img src="assets/logo-balanca-svg.svg" alt="Logotipo Balança da Justiça" width="38" height="38">
                 <div style="display: flex; flex-direction: column;">
@@ -91,7 +91,6 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Foto atualizada com o caminho correto -->
                 <img src="assets/foto-perfil.png" alt="João Paulo Padilha de Aquino - Advogado" loading="lazy">
             </div>
         </div>
@@ -198,6 +197,49 @@
                 <span class="tag">Direito do Consumidor</span>
                 <span class="tag">Direito da Saúde</span>
                 <span class="tag">BPC/LOAS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="fale-conosco" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Envie sua dúvida</h2>
+                <p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
+            </div>
+            
+            <div class="form-container">
+                <!-- O FormSubmit envia direto para o seu e-mail -->
+                <form action="https://formsubmit.co/jp.padilha.adv@gmail.com" method="POST" class="contact-form">
+                    
+                    <!-- Configurações ocultas do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://joaopaulopadilha.adv.br/">
+                    <input type="hidden" name="_subject" value="Novo contato pelo site!">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="Nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="Email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">WhatsApp / Telefone</label>
+                        <input type="tel" id="telefone" name="Telefone" placeholder="(22) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Como posso te ajudar?</label>
+                        <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Descreva brevemente o seu caso..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center; justify-content: center;">Enviar Mensagem</button>
+                </form>
             </div>
         </div>
     </section>
