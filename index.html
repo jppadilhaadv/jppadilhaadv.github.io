@@ -3,339 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>João Paulo Padilha | Advogado em Bom Jesus do Itabapoana - RJ</title>
+    
+    <!-- Favicon (O ícone da aba do navegador) -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo-balanca.svg">
+    
+    <meta name="description" content="Advocacia especializada em Direito do Consumidor, Bancário, Saúde, Criminal, Previdenciário e Civil. Atendimento em Bom Jesus do Itabapoana e em todo o Brasil.">
+    <meta name="keywords" content="advogado Bom Jesus do Itabapoana, advogado BPC LOAS, advogado direito bancário, advogado home care, advogado criminal">
+    
+    <!-- Open Graph (Redes Sociais e WhatsApp) -->
+    <meta property="og:title" content="João Paulo Padilha | Advocacia Estratégica">
+    <meta property="og:description" content="Análise individualizada e atendimento próximo. Atuação presencial e remota em todo o Brasil.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaopaulopadilha.adv.br/">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://joaopaulopadilha.adv.br/">
 
-    <title>João Paulo Padilha | Advogado em Bom Jesus do Itabapoana</title>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    <meta name="description" content="João Paulo Padilha, advogado OAB/RJ 266.185, com atuação em Bom Jesus do Itabapoana e região. Direito do Consumidor, Bancário, Criminal, Saúde e Civil.">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #1f2933;
-            background: #f8f8f6;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #111827;
-            color: white;
-            padding: 22px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        .oab {
-            font-size: 13px;
-            color: #d1d5db;
-            margin-top: 2px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #d1d5db;
-        }
-
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            align-items: center;
-            padding: 80px 7%;
-            background: white;
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .tag {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #6b7280;
-            margin-bottom: 18px;
-        }
-
-        h1 {
-            font-size: clamp(42px, 7vw, 76px);
-            line-height: 1.05;
-            color: #111827;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            color: #4b5563;
-            margin-bottom: 35px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #111827;
-            color: white;
-            padding: 14px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-        }
-
-        .button:hover {
-            background: #374151;
-        }
-
-        section {
-            padding: 80px 7%;
-        }
-
-        .section-title {
-            font-size: 36px;
-            color: #111827;
-            margin-bottom: 15px;
-        }
-
-        .section-intro {
-            max-width: 700px;
-            color: #6b7280;
-            margin-bottom: 45px;
-        }
-
-        .areas {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border: 1px solid #e5e7eb;
-            min-height: 180px;
-        }
-
-        .card h3 {
-            color: #111827;
-            margin-bottom: 12px;
-            font-size: 20px;
-        }
-
-        .card p {
-            color: #6b7280;
-            font-size: 15px;
-        }
-
-        .about {
-            background: #111827;
-            color: white;
-        }
-
-        .about .section-title {
-            color: white;
-        }
-
-        .about p {
-            max-width: 800px;
-            color: #d1d5db;
-            font-size: 18px;
-        }
-
-        .contact {
-            background: white;
-            text-align: center;
-        }
-
-        .contact p {
-            max-width: 650px;
-            margin: 0 auto 30px;
-            color: #6b7280;
-        }
-
-        footer {
-            background: #0b1120;
-            color: #9ca3af;
-            padding: 30px 7%;
-            text-align: center;
-            font-size: 13px;
-        }
-
-        @media (max-width: 800px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-                font-size: 13px;
-            }
-
-            .hero {
-                min-height: 65vh;
-                padding: 60px 7%;
-            }
-
-            .areas {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 60px 7%;
-            }
-        }
-    </style>
+    <!-- Schema.org para SEO Local/Profissional -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "João Paulo Padilha de Aquino - Advogado",
+      "image": "https://joaopaulopadilha.adv.br/assets/img/foto-perfil.png",
+      "@id": "",
+      "url": "https://joaopaulopadilha.adv.br",
+      "telephone": "+5522997412051",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bom Jesus do Itabapoana",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
 </head>
-
 <body>
 
-<header>
-    <div>
-        <div class="logo">JOÃO PAULO PADILHA</div>
-        <div class="oab">Advogado | OAB/RJ 266.185</div>
-    </div>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container header-content">
+            <!-- Logotipo e Nome (Atualizado com a balança) -->
+            <div class="brand" style="display: flex; align-items: center; gap: 12px;">
+                <img src="assets/img/logo-balanca.svg" alt="Logotipo Balança da Justiça" width="38" height="38">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="brand-name">João Paulo Padilha</span>
+                    <span class="brand-title">Advogado &mdash; OAB/RJ 266.185</span>
+                </div>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#atuacao">Atuação</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#atuacao">Áreas de atuação</a></li>
+                    <li><a href="#como-ajudar">Como funciona</a></li>
+                    <li><a href="#contato" class="btn-outline">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-
-    <section class="hero">
-        <div class="hero-content">
-            <div class="tag">Advocacia em Bom Jesus do Itabapoana e região</div>
-
-            <h1>Atuação jurídica com clareza, estratégia e responsabilidade.</h1>
-
-            <p>
-                Atendimento jurídico para questões de natureza cível,
-                consumerista, bancária, criminal e relacionadas ao direito
-                à saúde.
-            </p>
-
-            <a class="button" href="#contato">Entrar em contato</a>
+    <!-- HERO (Início) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Clareza para compreender.<br>Estratégia para agir.</h1>
+                <p>Advocacia com atuação em Bom Jesus do Itabapoana e atendimento em todo o Brasil, focada em análise individualizada e proximidade real com o cliente.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5522997412051" target="_blank" class="btn-primary">Falar pelo WhatsApp</a>
+                    <a href="#atuacao" class="btn-secondary">Conheça minha atuação</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- A sua fotografia entra aqui -->
+                <img src="assets/img/foto-perfil.png" alt="João Paulo Padilha - Advogado" loading="lazy">
+            </div>
         </div>
     </section>
 
-
-    <section id="atuacao">
-        <h2 class="section-title">Áreas de atuação</h2>
-
-        <p class="section-intro">
-            Atuação voltada à análise individualizada de cada caso,
-            buscando compreender o problema e identificar as medidas
-            jurídicas adequadas.
-        </p>
-
-        <div class="areas">
-
-            <div class="card">
-                <h3>Direito do Consumidor</h3>
-                <p>
-                    Relações de consumo, cobranças indevidas,
-                    contratos, serviços defeituosos e responsabilidade
-                    de fornecedores.
-                </p>
+    <!-- SOBRE -->
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Uma advocacia construída sobre análise, proximidade e responsabilidade.</h2>
             </div>
-
-            <div class="card">
-                <h3>Direito Bancário</h3>
-                <p>
-                    Empréstimos, descontos indevidos, contratos bancários,
-                    fraudes e conflitos envolvendo instituições financeiras.
-                </p>
+            <div class="sobre-content">
+                <p>O exercício do Direito exige mais do que conhecimento técnico; exige a capacidade de ouvir e compreender a realidade de cada cliente. Meu trabalho é pautado pela análise minuciosa de cada caso, rejeitando soluções genéricas e priorizando a estratégia mais segura e eficiente.</p>
+                <p>Acredito em um atendimento transparente, onde o cliente é orientado de forma clara sobre os cenários jurídicos, riscos e possibilidades, construindo uma relação baseada na confiança mútua e no comprometimento ético.</p>
             </div>
-
-            <div class="card">
-                <h3>Direito Criminal</h3>
-                <p>
-                    Atuação e acompanhamento em questões relacionadas
-                    à área criminal.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Direito da Saúde</h3>
-                <p>
-                    Demandas relacionadas ao acesso a tratamentos,
-                    medicamentos e serviços de saúde.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Direito Civil</h3>
-                <p>
-                    Questões contratuais, obrigações, indenizações
-                    e demais relações de natureza civil.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Curatela e Família</h3>
-                <p>
-                    Atuação em demandas relacionadas à proteção
-                    jurídica e patrimonial de pessoas que necessitam
-                    de representação ou assistência.
-                </p>
-            </div>
-
         </div>
     </section>
 
-
-    <section id="sobre" class="about">
-        <h2 class="section-title">Sobre</h2>
-
-        <p>
-            João Paulo Padilha é advogado inscrito na Ordem dos Advogados
-            do Brasil, Seccional do Rio de Janeiro, sob o nº 266.185.
-            Atua em Bom Jesus do Itabapoana e região, com atendimento
-            direcionado às particularidades de cada demanda.
-        </p>
+    <!-- ÁREAS DE ATUAÇÃO -->
+    <section id="atuacao" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Áreas de Atuação</h2>
+                <p>Foco e aprofundamento técnico nas demandas que protegem seus direitos e seu patrimônio.</p>
+            </div>
+            <div class="grid-cards">
+                <article class="card">
+                    <h3>Direito do Consumidor</h3>
+                    <p>Defesa dos direitos nas relações de consumo, garantindo equilíbrio e reparação diante de práticas abusivas.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito Bancário</h3>
+                    <p>Análise de contratos, juros abusivos, fraudes e renegociações para proteger o patrimônio do cliente frente às instituições financeiras.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito da Saúde</h3>
+                    <p>Atuação incisiva em demandas relacionadas ao SUS e planos de saúde, abrangendo fornecimento de medicamentos, tratamentos e processos de Home Care.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito Previdenciário</h3>
+                    <p>Assessoria para concessão de BPC/LOAS, aposentadorias, revisões e requerimentos junto ao INSS.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito Criminal</h3>
+                    <p>Defesa técnica especializada, atuando com discrição, responsabilidade e absoluto respeito às garantias fundamentais.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito Civil, Curatela e Família</h3>
+                    <p>Resolução de conflitos patrimoniais e familiares, processos de curatela e planejamento sucessório com sensibilidade e precisão técnica.</p>
+                </article>
+            </div>
+        </div>
     </section>
 
-
-    <section id="contato" class="contact">
-        <h2 class="section-title">Entre em contato</h2>
-
-        <p>
-            Para informações sobre atendimento e análise inicial da sua
-            situação, entre em contato pelos canais disponíveis.
-        </p>
-
-        <a class="button" href="https://wa.me/" target="_blank">
-            WhatsApp
-        </a>
+    <!-- ATUAÇÃO REGIONAL -->
+    <section id="regional" class="section bg-burgundy text-white">
+        <div class="container text-center">
+            <h2 class="font-serif">De Bom Jesus do Itabapoana para o Brasil</h2>
+            <p class="max-w-600">Com base física estabelecida no interior do Rio de Janeiro, nossa estrutura tecnológica permite o acompanhamento de processos e a realização de atendimentos remotos seguros e eficientes para clientes em todo o território nacional.</p>
+        </div>
     </section>
 
-</main>
+    <!-- COMO POSSO AJUDAR -->
+    <section id="como-ajudar" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>A abordagem do escritório</h2>
+                <p>O caminho para a resolução do seu problema jurídico.</p>
+            </div>
+            <div class="timeline">
+                <div class="step">
+                    <span class="step-num">01</span>
+                    <h4>Primeiro Contato</h4>
+                    <p>Escuta atenta e sigilosa para entender o contexto e os detalhes iniciais da sua demanda.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">02</span>
+                    <h4>Análise do Caso</h4>
+                    <p>Estudo técnico da legislação aplicável, documentação fornecida e jurisprudência atualizada.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">03</span>
+                    <h4>Orientação Jurídica</h4>
+                    <p>Apresentação clara do cenário, sem falsas promessas, explicando os caminhos possíveis e os riscos envolvidos.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">04</span>
+                    <h4>Estratégia Adequada</h4>
+                    <p>Definição conjunta da melhor rota de ação, seja pela via administrativa, conciliação ou litígio judicial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CONTEÚDO JURÍDICO (Preparado para expansão futura) -->
+    <section id="conteudo" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conteúdo Jurídico</h2>
+                <p>Artigos e análises sobre temas relevantes. <em>(Em breve)</em></p>
+            </div>
+            <div class="tags-container">
+                <span class="tag">Direito Bancário</span>
+                <span class="tag">Direito do Consumidor</span>
+                <span class="tag">Direito da Saúde</span>
+                <span class="tag">BPC/LOAS</span>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    © 2026 João Paulo Padilha — Advogado | OAB/RJ 266.185
-</footer>
+    <!-- FOOTER / CONTATO -->
+    <footer id="contato" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="font-serif">João Paulo Padilha de Aquino</h3>
+                <p>Advogado – OAB/RJ 266.185</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>E-mail: <a href="mailto:jp.padilha.adv@gmail.com">jp.padilha.adv@gmail.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/5522997412051" target="_blank">(22) 99741-2051</a></p>
+                <a href="https://wa.me/5522997412051" target="_blank" class="btn-primary mt-2">Iniciar conversa</a>
+            </div>
+            <div class="footer-location">
+                <h4>Atendimento</h4>
+                <p>Sede: Bom Jesus do Itabapoana – RJ</p>
+                <p><strong>Atendimento remoto em todo o Brasil.</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> João Paulo Padilha de Aquino. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
