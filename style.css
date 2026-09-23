@@ -275,9 +275,12 @@ h1, h2, h3, h4 {
 }
 
 .hero-image img {
-    max-width: 100%;
-    /* O comando abaixo cria uma sombra que acompanha o formato redondo da imagem perfeitamente */
-    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
+    max-width: 420px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 /* =========================================
