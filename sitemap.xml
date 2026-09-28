@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Página Principal -->
+    <url>
+        <loc>https://joaopaulopadilha.adv.br/</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-  <url>
-    <loc>https://joaopaulopadilha.adv.br/</loc>
-  </url>
+    <!-- Artigo: Home Care -->
+    <url>
+        <loc>https://joaopaulopadilha.adv.br/artigos/artigo-home-care.html</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Artigo: BPC/LOAS Idosos -->
+    <url>
+        <loc>https://joaopaulopadilha.adv.br/artigos/bpc-loas-idosos.html</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Página de Todos os Artigos -->
+    <url>
+        <loc>https://joaopaulopadilha.adv.br/artigos/todos-os-artigos.html</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
 </urlset>
