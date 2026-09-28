@@ -30,6 +30,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Estilo customizado para o Carrossel Horizontal de Artigos -->
+    <style>
+        .artigos-slider {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            padding-bottom: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .artigos-slider::-webkit-scrollbar {
+            height: 8px;
+        }
+        .artigos-slider::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+        .artigos-slider::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        .artigos-slider .card {
+            min-width: 320px;
+            max-width: 380px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+        @media (min-width: 768px) {
+            .artigos-slider .card {
+                min-width: 380px;
+            }
+        }
+    </style>
+
     <!-- Schema.org para SEO Local/Profissional -->
     <script type="application/ld+json">
     {
@@ -71,7 +106,9 @@
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conteudo">Artigos</a></li>
                     <li><a href="#atuacao">Áreas de atuação</a></li>
+                    <li><a href="#como-ajudar">Como funciona</a></li>
                     <li><a href="#fale-conosco" class="btn-outline">Contato</a></li>
                 </ul>
             </nav>
@@ -86,7 +123,7 @@
                 <p>Advocacia com atuação em Bom Jesus do Itabapoana e atendimento em todo o Brasil, focada em análise individualizada e proximidade real com o cliente.</p>
                 <div class="hero-buttons">
                     <a href="https://wa.me/5522997412051" target="_blank" class="btn-primary">Falar pelo WhatsApp</a>
-                    <a href="#fale-conosco" class="btn-secondary">Enviar Dúvida / Caso</a>
+                    <a href="#atuacao" class="btn-secondary">Conheça minha atuação</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -108,81 +145,77 @@
         </div>
     </section>
 
+    <!-- CONTEÚDO JURÍDICO / ARTIGOS (EM CARROSSEL DESLIZANTE) -->
+    <section id="conteudo" class="section">
+        <div class="container">
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 15px;">
+                <div>
+                    <h2>Conteúdo Jurídico & Artigos</h2>
+                    <p>Deslize para ver análises e orientações relevantes para a defesa dos seus direitos.</p>
+                </div>
+                <a href="artigos/todos-os-artigos.html" style="color: var(--primary); font-weight: 600; font-size: 0.95rem; text-decoration: underline;">Ver todos os artigos &rarr;</a>
+            </div>
+            
+            <!-- Cards deslizantes na horizontal -->
+            <div class="artigos-slider" style="margin-top: 30px;">
+                <!-- Artigo Home Care -->
+                <article class="card">
+                    <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light); padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Direito da Saúde</span>
+                    <h3>Home Care pelo SUS: é possível conseguir?</h3>
+                    <p>Entenda como funciona a atenção domiciliar pelo SUS, a importância do laudo médico detalhado e quando é possível buscar o atendimento judicialmente.</p>
+                    <a href="artigos/artigo-home-care.html" style="display: inline-block; margin-top: 20px; color: var(--primary); font-weight: 600;">Ler artigo completo &rarr;</a>
+                </article>
+
+                <!-- Artigo BPC/LOAS -->
+                <article class="card">
+                    <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light); padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Direito Previdenciário</span>
+                    <h3>BPC LOAS para idosos: quem tem 65 anos pode receber um salário mínimo?</h3>
+                    <p>Entenda os requisitos do BPC/LOAS para idosos com 65 anos ou mais, o critério de renda, a importância do CadÚnico e o que fazer em caso de negativa do INSS.</p>
+                    <a href="artigos/bpc-loas-idosos.html" style="display: inline-block; margin-top: 20px; color: var(--primary); font-weight: 600;">Ler artigo completo &rarr;</a>
+                </article>
+
+                <!-- Espaço para futuros artigos adicionais -->
+                <article class="card" style="display: flex; flex-direction: column; justify-content: center; text-align: center; background-color: var(--bg-light);">
+                    <h3 style="margin-bottom: 10px;">Mais conteúdos em breve</h3>
+                    <p style="font-size: 0.95rem; color: #666;">Novos artigos sobre seus direitos e atualizações jurídicas são publicados com frequência.</p>
+                    <a href="artigos/todos-os-artigos.html" class="btn-secondary" style="margin-top: 20px; display: inline-block; padding: 10px 20px; font-size: 0.9rem;">Acessar Central de Artigos</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- ÁREAS DE ATUAÇÃO -->
-    <section id="atuacao" class="section">
+    <section id="atuacao" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Áreas de Atuação</h2>
                 <p>Foco e aprofundamento técnico nas demandas que protegem seus direitos e seu patrimônio.</p>
             </div>
             <div class="grid-cards">
-                <article class="card">
+                <article class="card" style="background: white;">
                     <h3>Direito do Consumidor</h3>
                     <p>Defesa dos direitos nas relações de consumo, garantindo equilíbrio e reparação diante de práticas abusivas.</p>
                 </article>
-                <article class="card">
+                <article class="card" style="background: white;">
                     <h3>Direito Bancário</h3>
                     <p>Análise de contratos, juros abusivos, fraudes e renegociações para proteger o patrimônio do cliente frente às instituições financeiras.</p>
                 </article>
-                <article class="card">
+                <article class="card" style="background: white;">
                     <h3>Direito da Saúde</h3>
                     <p>Atuação incisiva em demandas relacionadas ao SUS e planos de saúde, abrangendo fornecimento de medicamentos, tratamentos e processos de Home Care.</p>
                 </article>
-                <article class="card">
+                <article class="card" style="background: white;">
                     <h3>Direito Previdenciário</h3>
                     <p>Assessoria para concessão de BPC/LOAS, aposentadorias, revisões e requerimentos junto ao INSS.</p>
                 </article>
-                <article class="card">
+                <article class="card" style="background: white;">
                     <h3>Direito Criminal</h3>
                     <p>Defesa técnica especializada, atuando com discrição, responsabilidade e absoluto respeito às garantias fundamentais.</p>
                 </article>
-                <article class="card">
+                <article class="card" style="background: white;">
                     <h3>Direito Civil, Curatela e Família</h3>
                     <p>Resolução de conflitos patrimoniais e familiares, processos de curatela e planejamento sucessório com sensibilidade e precisão técnica.</p>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- FORMULÁRIO DE CONTATO -->
-    <section id="fale-conosco" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Envie sua dúvida</h2>
-                <p>Descreva brevemente o seu caso abaixo. Entrarei em contato o mais rápido possível.</p>
-            </div>
-            
-            <div class="form-container">
-                <!-- O FormSubmit envia direto para o seu e-mail -->
-                <form action="https://formsubmit.co/jp.padilha.adv@gmail.com" method="POST" class="contact-form">
-                    
-                    <!-- Configurações ocultas do FormSubmit -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://joaopaulopadilha.adv.br/">
-                    <input type="hidden" name="_subject" value="Novo contato pelo site!">
-                    
-                    <div class="form-group">
-                        <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" name="Nome" placeholder="Seu nome" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="Email" placeholder="seu@email.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefone">WhatsApp / Telefone</label>
-                        <input type="tel" id="telefone" name="Telefone" placeholder="(22) 99999-9999" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mensagem">Como posso te ajudar?</label>
-                        <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Descreva brevemente o seu caso..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center; justify-content: center;">Enviar Mensagem</button>
-                </form>
             </div>
         </div>
     </section>
@@ -227,34 +260,45 @@
         </div>
     </section>
 
-    <!-- CONTEÚDO JURÍDICO / ARTIGOS -->
-    <section id="conteudo" class="section bg-light">
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="fale-conosco" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Conteúdo Jurídico & Artigos</h2>
-                <p>Análises e orientações sobre temas relevantes para a defesa dos seus direitos.</p>
+                <h2>Envie sua dúvida</h2>
+                <p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
             </div>
             
-            <div class="grid-cards" style="margin-bottom: 30px;">
-                <!-- Artigo Home Care -->
-                <article class="card">
-                    <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light);">Direito da Saúde</span>
-                    <h3>Home Care pelo SUS: é possível conseguir?</h3>
-                    <p>Entenda como funciona a atenção domiciliar pelo SUS, a importância do laudo médico detalhado e quando é possível buscar o atendimento judicialmente.</p>
-                    <a href="artigos/artigo-home-care.html" style="display: inline-block; margin-top: 20px; color: var(--primary); font-weight: 600;">Ler artigo completo &rarr;</a>
-                </article>
+            <div class="form-container">
+                <!-- O FormSubmit envia direto para o seu e-mail -->
+                <form action="https://formsubmit.co/jp.padilha.adv@gmail.com" method="POST" class="contact-form">
+                    
+                    <!-- Configurações ocultas do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://joaopaulopadilha.adv.br/">
+                    <input type="hidden" name="_subject" value="Novo contato pelo site!">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="Nome" placeholder="Seu nome" required>
+                    </div>
 
-                <!-- Artigo BPC/LOAS -->
-                <article class="card">
-                    <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light);">Direito Previdenciário</span>
-                    <h3>BPC LOAS para idosos: quem tem 65 anos pode receber um salário mínimo?</h3>
-                    <p>Entenda os requisitos do BPC/LOAS para idosos com 65 anos ou mais, o critério de renda, a importância do CadÚnico e o que fazer em caso de negativa do INSS.</p>
-                    <a href="artigos/bpc-loas-idosos.html" style="display: inline-block; margin-top: 20px; color: var(--primary); font-weight: 600;">Ler artigo completo &rarr;</a>
-                </article>
-            </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="Email" placeholder="seu@email.com" required>
+                    </div>
 
-            <div style="text-align: center;">
-                <a href="artigos/todos-os-artigos.html" style="color: var(--primary); font-weight: 600; font-size: 1rem; text-decoration: underline;">Ver todos os artigos publicados &rarr;</a>
+                    <div class="form-group">
+                        <label for="telefone">WhatsApp / Telefone</label>
+                        <input type="tel" id="telefone" name="Telefone" placeholder="(22) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Como posso te ajudar?</label>
+                        <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Descreva brevemente o seu caso..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center; justify-content: center;">Enviar Mensagem</button>
+                </form>
             </div>
         </div>
     </section>
