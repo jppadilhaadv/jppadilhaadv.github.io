@@ -7,13 +7,13 @@
     <!-- SEO Básico -->
     <title>João Paulo Padilha de Aquino | Advogado em Bom Jesus do Itabapoana - RJ</title>
     
-    <!-- Favicon (O ícone da aba do navegador) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/logo-balanca-svg.svg">
     
     <meta name="description" content="Advocacia especializada em Direito do Consumidor, Bancário, Saúde, Criminal, Previdenciário e Civil. Atendimento em Bom Jesus do Itabapoana e em todo o Brasil.">
     <meta name="keywords" content="advogado Bom Jesus do Itabapoana, advogado BPC LOAS, advogado direito bancário, advogado home care, advogado criminal">
     
-    <!-- Open Graph (Redes Sociais e WhatsApp) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="João Paulo Padilha de Aquino | Advocacia Estratégica">
     <meta property="og:description" content="Análise individualizada e atendimento próximo. Atuação presencial e remota em todo o Brasil.">
     <meta property="og:type" content="website">
@@ -65,7 +65,7 @@
         }
     </style>
 
-    <!-- Schema.org para SEO Local/Profissional -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -89,7 +89,6 @@
     <!-- CABEÇALHO -->
     <header class="header">
         <div class="container header-content">
-            <!-- Logotipo e Nome -->
             <div class="brand" style="display: flex; align-items: center; gap: 12px;">
                 <img src="assets/logo-balanca-svg.svg" alt="Logotipo Balança da Justiça" width="38" height="38">
                 <div style="display: flex; flex-direction: column;">
@@ -105,8 +104,8 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#conteudo">Artigos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#atuacao">Áreas de atuação</a></li>
                     <li><a href="#como-ajudar">Como funciona</a></li>
                     <li><a href="#fale-conosco" class="btn-outline">Contato</a></li>
@@ -132,21 +131,8 @@
         </div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Uma advocacia construída sobre análise, proximidade e responsabilidade.</h2>
-            </div>
-            <div class="sobre-content">
-                <p>O exercício do Direito exige mais do que conhecimento técnico; exige a capacidade de ouvir e compreender a realidade de cada cliente. Meu trabalho é pautado pela análise minuciosa de cada caso, rejeitando soluções genéricas e priorizando a estratégia mais segura e eficiente.</p>
-                <p>Acredito em um atendimento transparente, onde o cliente é orientado de forma clara sobre os cenários jurídicos, riscos e possibilidades, construindo uma relação baseada na confiança mútua e no comprometimento ético.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTEÚDO JURÍDICO / ARTIGOS (EM CARROSSEL DESLIZANTE) -->
-    <section id="conteudo" class="section">
+    <!-- CONTEÚDO JURÍDICO / ARTIGOS EM CARROSSEL (LOGO NO TOPO, APÓS O HERO) -->
+    <section id="conteudo" class="section bg-light">
         <div class="container">
             <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 15px;">
                 <div>
@@ -159,7 +145,7 @@
             <!-- Cards deslizantes na horizontal -->
             <div class="artigos-slider" style="margin-top: 30px;">
                 <!-- Artigo Home Care -->
-                <article class="card">
+                <article class="card" style="background: white;">
                     <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light); padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Direito da Saúde</span>
                     <h3>Home Care pelo SUS: é possível conseguir?</h3>
                     <p>Entenda como funciona a atenção domiciliar pelo SUS, a importância do laudo médico detalhado e quando é possível buscar o atendimento judicialmente.</p>
@@ -167,7 +153,7 @@
                 </article>
 
                 <!-- Artigo BPC/LOAS -->
-                <article class="card">
+                <article class="card" style="background: white;">
                     <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light); padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Direito Previdenciário</span>
                     <h3>BPC LOAS para idosos: quem tem 65 anos pode receber um salário mínimo?</h3>
                     <p>Entenda os requisitos do BPC/LOAS para idosos com 65 anos ou mais, o critério de renda, a importância do CadÚnico e o que fazer em caso de negativa do INSS.</p>
@@ -175,11 +161,24 @@
                 </article>
 
                 <!-- Espaço para futuros artigos adicionais -->
-                <article class="card" style="display: flex; flex-direction: column; justify-content: center; text-align: center; background-color: var(--bg-light);">
+                <article class="card" style="display: flex; flex-direction: column; justify-content: center; text-align: center; background-color: white;">
                     <h3 style="margin-bottom: 10px;">Mais conteúdos em breve</h3>
                     <p style="font-size: 0.95rem; color: #666;">Novos artigos sobre seus direitos e atualizações jurídicas são publicados com frequência.</p>
                     <a href="artigos/todos-os-artigos.html" class="btn-secondary" style="margin-top: 20px; display: inline-block; padding: 10px 20px; font-size: 0.9rem;">Acessar Central de Artigos</a>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Uma advocacia construída sobre análise, proximidade e responsabilidade.</h2>
+            </div>
+            <div class="sobre-content">
+                <p>O exercício do Direito exige mais do que conhecimento técnico; exige a capacidade de ouvir e compreender a realidade de cada cliente. Meu trabalho é pautado pela análise minuciosa de cada caso, rejeitando soluções genéricas e priorizando a estratégia mais segura e eficiente.</p>
+                <p>Acredito em um atendimento transparente, onde o cliente é orientado de forma clara sobre os cenários jurídicos, riscos e possibilidades, construindo uma relação baseada na confiança mútua e no comprometimento ético.</p>
             </div>
         </div>
     </section>
@@ -269,10 +268,8 @@
             </div>
             
             <div class="form-container">
-                <!-- O FormSubmit envia direto para o seu e-mail -->
                 <form action="https://formsubmit.co/jp.padilha.adv@gmail.com" method="POST" class="contact-form">
                     
-                    <!-- Configurações ocultas do FormSubmit -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://joaopaulopadilha.adv.br/">
                     <input type="hidden" name="_subject" value="Novo contato pelo site!">
@@ -303,13 +300,12 @@
         </div>
     </section>
 
-    <!-- FOOTER / CONTATO -->
+    <!-- FOOTER -->
     <footer id="contato" class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
                 <h3 class="font-serif">João Paulo Padilha de Aquino</h3>
                 <p>Advogado – OAB/RJ 266.185</p>
-                <!-- Redes Sociais no Rodapé -->
                 <div style="display: flex; gap: 15px; margin-top: 15px;">
                     <a href="https://www.instagram.com/jp.padilha.advogado/" target="_blank" style="color: inherit; text-decoration: underline; font-size: 0.95rem;">Instagram</a>
                     <a href="https://www.tiktok.com/@drjppadilha" target="_blank" style="color: inherit; text-decoration: underline; font-size: 0.95rem;">TikTok</a>
@@ -332,7 +328,7 @@
         </div>
     </footer>
 
-    <!-- BOTÃO FLUTUANTE "Tire sua dúvida" -->
+    <!-- BOTÃO FLUTUANTE -->
     <a href="#fale-conosco" aria-label="Tire sua dúvida" style="position: fixed; bottom: 25px; right: 25px; background-color: var(--primary); color: white; padding: 12px 20px; border-radius: 50px; display: flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; transition: transform 0.3s ease;">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
