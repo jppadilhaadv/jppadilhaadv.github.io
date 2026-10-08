@@ -95,10 +95,11 @@
                 <span></span><span></span><span></span>
             </button>
 
+            <!-- Menu com link para Minha História no topo -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="artigos/historia.html">Minha História</a></li>
                     <li><a href="#atuacao">Áreas de atuação</a></li>
                     <li><a href="#como-ajudar">Como funciona</a></li>
                     <li><a href="#conteudo">Artigos</a></li>
@@ -115,7 +116,7 @@
                 <h1>Clareza para compreender.<br>Estratégia para agir.</h1>
                 <p>Advocacia com atuação em Bom Jesus do Itabapoana, região (raio de 100km) e atendimento remoto em todo o Brasil, focada em análise individualizada e proximidade real com o cliente.</p>
                 
-                <!-- Botões e Destaque de Atendimento Online -->
+                <!-- Botões e Destaques no Topo -->
                 <div class="hero-buttons" style="flex-wrap: wrap; gap: 15px; align-items: center;">
                     <a href="https://wa.me/5522997412051" target="_blank" class="btn-primary">Falar pelo WhatsApp</a>
                     <a href="#atuacao" class="btn-secondary">Conheça minha atuação</a>
@@ -144,7 +145,8 @@
             </div>
             <div class="sobre-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <p style="margin-bottom: 24px;">O exercício do Direito exige mais do que conhecimento técnico; exige a capacidade de ouvir e compreender a realidade de cada cliente. Meu trabalho é pautado pela análise minuciosa de cada caso, rejeitando soluções genéricas e priorizando a estratégia mais segura e eficiente.</p>
-                <p>Acredito em um atendimento transparente, onde o cliente é orientado de forma clara sobre os cenários jurídicos, riscos e possibilidades, construindo uma relação baseada na confiança mútua e no comprometimento ético.</p>
+                <p style="margin-bottom: 30px;">Acredito em um atendimento transparente, onde o cliente é orientado de forma clara sobre os cenários jurídicos, riscos e possibilidades, construindo uma relação baseada na confiança mútua e no comprometimento ético.</p>
+                <a href="artigos/historia.html" class="btn-secondary" style="display: inline-block;">Conheça minha trajetória completa &rarr;</a>
             </div>
         </div>
     </section>
@@ -234,7 +236,7 @@
             </div>
             
             <div class="grid-cards" style="margin-bottom: 30px;">
-                <!-- Artigo Atendimento Online (Novo) -->
+                <!-- Artigo Atendimento Online -->
                 <article class="card">
                     <span class="tag" style="display: inline-block; margin-bottom: 12px; background-color: var(--bg-light);">Atendimento Remoto</span>
                     <h3>Advogado Online em Todo o Brasil</h3>
@@ -259,7 +261,7 @@
                 </article>
             </div>
 
-            <!-- Link Pequeno para Ver Todos os Artigos -->
+            <!-- Link para Ver Todos os Artigos -->
             <div style="text-align: center;">
                 <a href="artigos/todos-os-artigos.html" style="color: var(--primary); font-weight: 600; font-size: 1rem; text-decoration: underline;">Ver todos os artigos publicados &rarr;</a>
             </div>
@@ -275,10 +277,8 @@
             </div>
             
             <div class="form-container">
-                <!-- O FormSubmit envia direto para o seu e-mail -->
                 <form action="https://formsubmit.co/jp.padilha.adv@gmail.com" method="POST" class="contact-form">
                     
-                    <!-- Configurações ocultas do FormSubmit -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://joaopaulopadilha.adv.br/">
                     <input type="hidden" name="_subject" value="Novo contato pelo site!">
@@ -303,4 +303,49 @@
                         <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Descreva brevemente o seu caso..." required></textarea>
                     </div>
 
-                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center;
+                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center; justify-content: center;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTATO -->
+    <footer id="contato" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="font-serif">João Paulo Padilha de Aquino</h3>
+                <p>Advogado – OAB/RJ 266.185</p>
+                <div style="display: flex; gap: 15px; margin-top: 15px;">
+                    <a href="https://www.instagram.com/jp.padilha.advogado/" target="_blank" style="color: inherit; text-decoration: underline; font-size: 0.95rem;">Instagram</a>
+                    <a href="https://www.tiktok.com/@drjppadilha" target="_blank" style="color: inherit; text-decoration: underline; font-size: 0.95rem;">TikTok</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>E-mail: <a href="mailto:jp.padilha.adv@gmail.com">jp.padilha.adv@gmail.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/5522997412051" target="_blank">(22) 99741-2051</a></p>
+                <a href="https://wa.me/5522997412051" target="_blank" class="btn-primary mt-2">Iniciar conversa</a>
+            </div>
+            <div class="footer-location">
+                <h4>Atendimento</h4>
+                <p>Sede: Bom Jesus do Itabapoana – RJ</p>
+                <p><strong>Atendimento regional (raio de 100km) e remoto em todo o Brasil.</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> João Paulo Padilha de Aquino. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE "Tire sua dúvida" -->
+    <a href="#fale-conosco" aria-label="Tire sua dúvida" style="position: fixed; bottom: 25px; right: 25px; background-color: var(--primary); color: white; padding: 12px 20px; border-radius: 50px; display: flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; transition: transform 0.3s ease;">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>Tire sua dúvida</span>
+    </a>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
